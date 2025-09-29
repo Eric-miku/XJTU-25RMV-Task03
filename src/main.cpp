@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     /*===========================第一阶段：小球检测=================================*/
     BallDetector detector;
-    string videoPath = "../TASK03/video.mp4"; // 替换为你的视频路径
+    string videoPath = "../resources/video.mp4"; // 替换为你的视频路径
     // 检测小球位置
     vector<Position> positions = detector.detectBallPositions(videoPath);
     if (positions.empty()) {
