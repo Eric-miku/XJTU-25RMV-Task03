@@ -24,7 +24,7 @@ int main() {
     TrajectoryFitter fitter;
     FitResult result = fitter.fitTrajectory(positions);
     // 评估和保存结果
-    fitter.evaluateFit(positions, result);
+    // fitter.evaluateFit(positions, result);
     fitter.saveFitResult(result, "fit_result.csv");
 
     /*===========================第三阶段：轨迹对比可视化============================*/

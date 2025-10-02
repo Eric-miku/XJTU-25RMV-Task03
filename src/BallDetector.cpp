@@ -85,11 +85,11 @@ std::vector<Position> BallDetector::detectBallPositions(const std::string& video
                 double yTransformed = height - ballPosition.y;
                 positions.push_back({currentTime, ballPosition.x, yTransformed});
                 
-                std::cout << "帧 " << frameCount << ": t=" << std::fixed << std::setprecision(3) 
-                          << currentTime << "s, 位置=(" << ballPosition.x << ", " 
-                          << yTransformed << ")" << std::endl;
+                // std::cout << "帧 " << frameCount << ": t=" << std::fixed << std::setprecision(3) 
+                //           << currentTime << "s, 位置=(" << ballPosition.x << ", " 
+                //           << yTransformed << ")" << std::endl;
             } else {
-                std::cout << "警告: 第 " << frameCount << " 帧未检测到小球" << std::endl;
+                // std::cout << "警告: 第 " << frameCount << " 帧未检测到小球" << std::endl;
             }
             
             // // 显示处理结果
@@ -122,8 +122,8 @@ std::vector<Position> BallDetector::detectBallPositions(const std::string& video
     // cap.release();
     // cv::destroyAllWindows();
     
-    std::cout << "检测完成: 共处理 " << frameCount << " 帧，成功检测 " 
-              << positions.size() << " 个位置" << std::endl;
+    // std::cout << "检测完成: 共处理 " << frameCount << " 帧，成功检测 " 
+    //           << positions.size() << " 个位置" << std::endl;
     
     return positions;
 }
