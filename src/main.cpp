@@ -18,7 +18,7 @@ int main() {
     // 保存检测结果
     savePositionsToFile(positions, "ball_positions.csv");
     // 显示轨迹
-    detector.plotTrajectory(positions);
+    // detector.plotTrajectory(positions);
     
     /*===========================第二阶段：轨迹拟合=================================*/
     TrajectoryFitter fitter;
@@ -28,7 +28,7 @@ int main() {
     fitter.saveFitResult(result, "fit_result.csv");
 
     /*===========================第三阶段：轨迹对比可视化============================*/
-    fitter.plotComparison(positions, result);
+    // fitter.plotComparison(positions, result);
 
     cout << "\n轨迹拟合完成！" << endl;
     
